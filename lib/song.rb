@@ -63,8 +63,9 @@ class Song
     song
   end
   
-   def save	  def save
-    self.class.all << self	    self.class.all << self
+    def save
+    self.class.all << self	
+    self.class.all << self
   end	  end
    def self.destroy_all
     self.all.clear
