@@ -27,7 +27,7 @@ class Song
     song = self.new
     song.name = name
     self.all << song
-    son
+    song
     
   end
 end
