@@ -35,7 +35,7 @@ class Song
   end
   
   def self.find_or_create_by_name(name)
-    @@all.each 
+    @@all.each{|song|  }
     else 
       song = self.new
       song.name = name
