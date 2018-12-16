@@ -56,11 +56,13 @@ class Song
     song.artist_name = artist_name
     song
   end
+  
    def self.create_from_filename(song_with_format)
     song = self.new_from_filename(song_with_format)
-    song.save
+    @@all << song
     song
   end
+  
    def save	  def save
     self.class.all << self	    self.class.all << self
   end	  end
